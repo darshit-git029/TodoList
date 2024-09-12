@@ -1,0 +1,350 @@
+body {
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+}
+
+.main {
+    padding: 4rem;
+    position: absolute;
+    margin: 5rem 10rem 5rem 10rem;
+    width: 75%;
+    background-color: #767676;
+    border-radius: 10px;
+}
+
+.todo-heading {
+    margin-top: -4rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.todo-search {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    border-bottom: 2px #d7d7d7 solid;
+    padding-bottom: 2.5rem;
+}
+
+.todo-text {
+    width: 40%;
+    height: 2.5rem;
+    border: 3px #fff solid;
+    background-color: #ababab;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    width: 5rem;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #002aff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #152098;
+    color: #fff;
+}
+
+
+.edit-btn {
+    width: 8rem;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #ed9a25;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.edit-btn:hover {
+    background-color: #a46918;
+    color: #fff;
+}
+
+.previous-btn {
+    width: 12rem;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #ed9a25;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.previous-btn:hover {
+    background-color: #a56b19;
+    color: #fff;
+}
+
+.delete-btn {
+    width: 5rem;
+    height: 2.4rem;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+}
+
+.delete-btn:hover {
+    background-color: #8b1313;
+    color: #fff;
+}
+
+
+.finished-btn {
+    width: 8rem;
+    height: 2.5rem;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #2bff00;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left: 0.8rem;
+}
+
+.finished-btn:hover {
+    background-color: #35af1c;
+    color: #fff;
+}
+
+.meassge {
+    display: block;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px #fff solid;
+}
+
+
+.display-work {
+    margin-top: 2rem;
+    border: 2px #d7d7d7 solid;
+    height: auto;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding:25px;
+    display: none;
+
+}
+
+.task-index{
+    color: white;
+}
+
+.textarea{
+    color: #fff;
+    background-color: #2b2b2b;
+    border: none;
+    width: 100%;
+    resize: none;
+    font-size: 1rem;
+    margin-top:0rem;
+    text-align: center;
+    justify-content: baseline;
+    margin-bottom: -2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.status-text{
+    color: white;
+}
+
+.display-heading {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.display-heading th,
+.display-heading td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    vertical-align: baseline;
+    height: 2rem;
+}
+
+.display-heading th {
+    background-color: #333;
+    color: #fff;
+    /* border: 1px solid #ddd; */
+
+}
+
+
+.table-heading1 {
+    width: 5rem;
+}
+
+.table-heading2 {
+    width: 18rem;
+}
+
+.table-heading3 {
+    width: 8rem;
+}
+
+.table-heading4 {
+    width: 18rem;
+}
+
+.display-heading tr {
+    height: 4rem;
+    margin-top: 0rem;
+}
+
+.display-heading td div {
+    height: auto;
+    margin-top: 2rem;
+}
+
+.Action {
+    margin-top: 0rem;
+}
+
+.no {
+    text-align: center;
+}
+
+
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+
+    .table-heading2,
+    .table-heading4 {
+        width: auto;
+        /* Allow columns to resize for smaller screens */
+    }
+}
+
+
+/* Existing styles remain unchanged */
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .main {
+        margin: 3rem 5rem;
+        width: 85%;
+        padding: 3rem;
+    }
+
+    .todo-heading {
+        font-size: 1.8rem;
+    }
+
+    .todo-text {
+        width: 50%;
+    }
+
+    .display-heading {
+        grid-template-columns: 0.3fr 0.5fr 0.5fr 0.7fr;
+    }
+
+    .btn1 {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin: 2rem;
+        width: 90%;
+        padding: 2.5rem;
+    }
+
+    .todo-heading {
+        font-size: 1.6rem;
+    }
+
+    .todo-text {
+        width: 60%;
+    }
+
+    .display-heading {
+        grid-template-columns: 0.2fr 0.6fr 0.5fr 1fr;
+    }
+
+    .btn1 {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        margin: 1rem;
+        width: 95%;
+        padding: 2rem;
+    }
+
+    .todo-heading {
+        font-size: 1.4rem;
+    }
+
+    .todo-search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-text {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .display-heading {
+        grid-template-columns: 1fr;
+    }
+
+    .display-task,
+    .textarea,
+    .Show-status {
+        gap: 1.5rem;
+    }
+
+    .btn1 {
+        width: 6rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .submit-btn,
+    .edit-btn,
+    .delete-btn,
+    .finished-btn {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
